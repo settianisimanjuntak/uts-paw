@@ -1,10 +1,82 @@
 [
   {
-    "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "id": "1", 
+    "judul": "Pantai Mutun", 
+    "kategori": "Pantai", 
+    "kabupaten":"Pesawaran", 
+    "hargaTiket": 25000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "2", 
+    "judul": "Pantai Sari Ringgung", 
+    "kategori": "Pantai", 
+    "kabupaten":"Pesawaran", 
+    "hargaTiket": 15000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "3", 
+    "judul": "Pulau pahawang", 
+    "kategori": "Pulau", 
+    "kabupaten":"Pesawaran", 
+    "hargaTiket": 15000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "4", 
+    "judul": "Teluk kiluan", 
+    "kategori": "Wisata Bahari", 
+    "kabupaten":"Tanggamus", 
+    "hargaTiket": 10000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "5", 
+    "judul": "Menara Siger", 
+    "kategori": "Wisata Budaya", 
+    "kabupaten":"Lampung Selatan", 
+    "hargaTiket": 20000, 
+    "jamBuka": "08.00-18.00"
+  },
+  {
+    "id": "6", 
+    "judul": "Taman Nasional Way kambas", 
+    "kategori": "Wisata Alam", 
+    "kabupaten":"Lampung Timur", 
+    "hargaTiket": 10000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "7", 
+    "judul": "Air Terjun Putri Malu", 
+    "kategori": "Air Terjun", 
+    "kabupaten":"Way Kanan", 
+    "hargaTiket": 10000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "8", 
+    "judul": "Pantai Tanjung Setia", 
+    "kategori": "Pantai", 
+    "kabupaten":"Pesisir Barat", 
+    "hargaTiket": 10000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "9", 
+    "judul": "Taman Wisata Lembah Hijau", 
+    "kategori": "Wisata Rekreasi", 
+    "kabupaten":"Bandar Lampung", 
+    "hargaTiket": 55000, 
+    "jamBuka": "08.00-17.00"
+  },
+  {
+    "id": "10", 
+    "judul": "Puncak Mas", 
+    "kategori": "Puncak Mas", 
+    "kabupaten":"Bandar Lampung", 
+    "hargaTiket": 20000, 
+    "jamBuka": "08.00-22.00"
   }
 ]

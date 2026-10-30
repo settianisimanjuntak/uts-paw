@@ -4,9 +4,10 @@ import { MemoryRouter } from 'react-router-dom'
 import { beforeEach, expect, test, vi } from 'vitest'
 import App from './App.jsx'
 
-const DATA = [{ id: '1', judul: 'Laporan praktikum CSS', kategori: 'Kuliah', tenggat: '2026-10-28', prioritas: 'tinggi' }]
-
+const DATA = [{ id: '1', judul: 'Pantai Mutun', kategori: 'Pantai', kabupaten: 'Pesawaran', hargaTiket: 25000,jamBuka: '08.00-17.00'},
+]
 beforeEach(() => {
+  localStorage.clear()
   vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(DATA))))
 })
 
@@ -20,7 +21,7 @@ function buka(path) {
 
 test('menampilkan data hasil fetch di halaman koleksi', async () => {
   buka('/koleksi')
-  expect(await screen.findByText('Laporan praktikum CSS')).toBeInTheDocument()
+  expect(await screen.findByText('Pantai Mutun')).toBeInTheDocument()
 })
 
 test('form menolak judul kosong', async () => {

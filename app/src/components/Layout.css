@@ -1,0 +1,198 @@
+.kerangka {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background:  #08343d;
+  border-bottom: 4px solid #c8901a;
+  color: #ffffff;
+}
+
+.kepala strong {
+  font-size: 1.3rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu a {
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  color: #cfe3e0;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu a:focus-visible {
+  outline: 3px solid #c8901a;
+}
+
+.menu a.active {
+  background: #c8901a;
+  color: #08343d;
+  font-weight: 600;
+}
+
+.isi {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.isi h1::before {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-bottom: 0.5rem;
+  background: #c8901a;
+}
+
+.kaki {
+  padding: 1rem 1.5rem;
+  background: #08343d;
+  color: #a9c4c1;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Tombol dan tautan aksi (halaman detail) */
+.aksi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.aksi button {
+  padding: 0.45rem 1rem;
+  border: 2px solid #a3341f;
+  border-radius: 6px;
+  background: transparent;
+  color: #a3341f;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.aksi button:hover {
+  background: #a3341f;
+  color: #ffffff;
+}
+
+.aksi button:focus-visible,
+.aksi a:focus-visible {
+  outline: 3px solid #c8901a;
+  outline-offset: 2px;
+}
+
+.isi dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+}
+
+.isi dt {
+  font-weight: 600;
+}
+
+.isi dd {
+  margin: 0;
+}
+
+.alat-koleksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.alat-koleksi input,
+.alat-koleksi select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  background: #ffffff;
+  font: inherit;
+}
+
+.alat-koleksi input:focus,
+.alat-koleksi select:focus {
+  border-color: #0d4f5c;
+  outline: 3px solid #c8901a;
+}
+
+.daftar-kartu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.kartu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid #dcdcdc;
+  border-top: 4px solid #0d4f5c;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.kartu:hover {
+  box-shadow: 0 4px 14px rgba(8, 52, 61, 0.15);
+}
+
+.kartu h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.kartu p {
+  margin: 0;
+  color: #57606a;
+}
+
+.kartu a {
+  margin-top: 0.4rem;
+  color: #0d4f5c;
+  font-weight: 600;
+}
+
+.kartu a:focus-visible {
+  outline: 3px solid #c8901a;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .daftar-kartu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .kepala {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .daftar-kartu {
+    grid-template-columns: 1fr;
+  }
+}
